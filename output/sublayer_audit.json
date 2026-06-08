@@ -1,0 +1,40 @@
+{
+  "implemented": [
+    "1.1_rsa_check",
+    "1.2_url_masker",
+    "1.3_entropy_filter",
+    "1.4_unicode_normalizer",
+    "1.5_intent_scan",
+    "2.1_partitioning",
+    "2.2_parallel_inference",
+    "2.3_topological_ejection",
+    "3.1_anchor_generation",
+    "3.2_distance_calculation",
+    "3.3_manifold_routing"
+  ],
+  "count": 11,
+  "layer_1": [
+    "1.1_rsa_check",
+    "1.2_url_masker",
+    "1.3_entropy_filter",
+    "1.4_unicode_normalizer",
+    "1.5_intent_scan"
+  ],
+  "layer_2": [
+    "2.1_partitioning",
+    "2.2_parallel_inference",
+    "2.3_topological_ejection"
+  ],
+  "layer_3": [
+    "3.1_anchor_generation",
+    "3.2_distance_calculation",
+    "3.3_manifold_routing"
+  ],
+  "optimizations": [
+    "embedding_cache",
+    "precomputed_clean_anchor",
+    "isolation_forest_n_estimators=50",
+    "parallel_mistral_workers=8",
+    "early_drop_layer_1_skips_llm_partitions"
+  ]
+}
